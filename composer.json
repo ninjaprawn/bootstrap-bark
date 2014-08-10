@@ -1,8 +1,8 @@
 {
-    "name": "ifightcrime/bootstrap-growl",
-    "description": "Pretty simple jQuery plugin that turns standard Bootstrap alerts into 'Growl-like' notifications.",
-    "keywords": ["bootstrap", "growl", "notifications"],
-    "homepage": "https://github.com/ifightcrime/bootstrap-growl",
-    "author": "Nick Larson",
+    "name": "ninjaprawn/bootstrap-bark",
+    "description": "Better Bootstrap Growl notifications.",
+    "keywords": ["bootstrap", "bark", "notifications"],
+    "homepage": "https://github.com/ninjaprawn/bootstrap-bark",
+    "author": "George Dan",
     "license": "MIT"
 }
