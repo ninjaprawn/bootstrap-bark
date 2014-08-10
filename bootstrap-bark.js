@@ -8,7 +8,7 @@
 
     options = $.extend({}, $.bootstrapGrowl.default_options, options);
     $alert = $("<div>");
-    $alert.attr("class", "bootstrap-growl alert");
+    $alert.attr("class", "bootstrap-bark alert");
     if (options.type) {
       $alert.addClass("alert-" + options.type);
     }
@@ -23,7 +23,7 @@
       };
     }
     offsetAmount = options.offset.amount;
-    $(".bootstrap-growl").each(function() {
+    $(".bootstrap-bark").each(function() {
       return offsetAmount = Math.max(offsetAmount, parseInt($(this).css(options.offset.from)) + $(this).outerHeight() + options.stackup_spacing);
     });
     css = {
