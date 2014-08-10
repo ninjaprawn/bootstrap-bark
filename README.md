@@ -1,21 +1,16 @@
-#bootstrap-growl
+#bootstrap-bark
 
-Pretty simple jQuery plugin that turns standard Bootstrap alerts into hovering "Growl-like" notifications.
+Bootstrap Bark is a better way to send notifications to users using JQuery and Bootstrap. This is based on Bootstrap Growl.
 
-##Demo
+##Features added
 
-I have a basic demo set up at jsfiddle for the time being which you can view here: http://jsfiddle.net/ifightcrime/Us6WX/88/
-
-##Features
-
-* Uses standard [Twitter Bootstrap alerts](http://twitter.github.com/bootstrap/components.html#alerts) which provides 'info', 'danger', and 'success' styles.
-* Multiple growls called consecutively are stacked up one after another in a list.
-* Automatically fades growls away after a default of 4 seconds.
+* Callback functions (when notification fades away)
+* More coming soon.
 
 ##Dependencies
 
-1. Latest version of jQuery. (tested on 2.1.1)
-2. [Twitter Bootstrap](http://twitter.github.com/bootstrap/index.html). (current rev tested with 3.1.1)
+1. Latest version of jQuery. (tested on 2.1.1 and 1.11.1)
+2. [Twitter Bootstrap](http://twitter.github.com/bootstrap/index.html). (current rev tested with 3.2.0)
 
 ##Usage
 
@@ -38,14 +33,7 @@ $.bootstrapGrowl("another message, yay!", {
   width: 250, // (integer, or 'auto')
   delay: 4000, // Time while the message will be displayed. It's not equivalent to the *demo* timeOut!
   allow_dismiss: true, // If true then will display a cross to close the popup.
-  stackup_spacing: 10 // spacing between consecutively stacked growls.
+  stackup_spacing: 10, // spacing between consecutively stacked growls.
+  callback: function() {} //callback function after notification fades away!
 });
 ```
-
-Note: Previous ```top_offset``` is not broken by this latest change.
-
-##Additional Contributors
-
-* Jose Martinez https://github.com/callado4
-* Lloyd Watkin https://github.com/lloydwatkin
-* TruongSinh Tran-Nguyen https://github.com/tran-nguyen
