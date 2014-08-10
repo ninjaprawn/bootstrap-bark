@@ -3,10 +3,10 @@
 
   $ = jQuery;
 
-  $.bootstrapGrowl = function(message, options) {
+  $.bootstrapBark = function(message, options) {
     var $alert, css, offsetAmount;
 
-    options = $.extend({}, $.bootstrapGrowl.default_options, options);
+    options = $.extend({}, $.bootstrapBark.default_options, options);
     $alert = $("<div>");
     $alert.attr("class", "bootstrap-bark alert");
     if (options.type) {
@@ -60,7 +60,7 @@
     return $alert;
   };
 
-  $.bootstrapGrowl.default_options = {
+  $.bootstrapBark.default_options = {
     ele: "body",
     type: "info",
     offset: {
