@@ -14,18 +14,18 @@ Bootstrap Bark is a better way to send notifications to users using JQuery and B
 
 ##Usage
 
-Include the dependencies and `jquery.bootstrap-growl.min.js` into your page and call the following:
+Include the dependencies and `bootstrap-bark.min.js` into your page and call the following:
 
 ```javascript
-$.bootstrapGrowl("My message");
+$.bootstrapBark("My message");
 ```
 
 ##Available Options
 
-By default, growls use the standard 'alert' Bootstrap style, are 250px wide, right aligned, and are positioned 20px from the top right of the page.
+By default, barks use the standard 'alert' Bootstrap style, are 250px wide, right aligned, and are positioned 20px from the top right of the page.
 
 ```javascript
-$.bootstrapGrowl("another message, yay!", {
+$.bootstrapBark("another message, yay!", {
   ele: 'body', // which element to append to
   type: 'info', // (null, 'info', 'danger', 'success')
   offset: {from: 'top', amount: 20}, // 'top', or 'bottom'
